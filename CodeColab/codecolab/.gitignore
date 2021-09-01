@@ -23,4 +23,4 @@ yarn-debug.log*
 yarn-error.log*
 
 #URI
-/src/server/uri.js
+/src/server/urifile.js
