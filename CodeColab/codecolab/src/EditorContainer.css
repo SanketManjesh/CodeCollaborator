@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+}
+
+.editors {
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.titles {
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto;
+  width: 100%;
+}
+
+.titles > div {
+  display: flex;
+  font-weight: bold;
+  background-color: #C8C8C8;
+  color: white;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
