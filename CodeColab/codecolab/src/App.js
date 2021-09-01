@@ -4,7 +4,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route} from 'react-router-dom';
-//5Cq48XtBzefpVLV
 function App() {
 
    return(

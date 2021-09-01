@@ -1,9 +1,10 @@
 const MongoClient = require('mongodb').MongoClient;
 const express = require('express');
 const assert = require('assert');
+const uri = require('./uri').uri;
 var bodyParser = require('body-parser');
 const { env } = require('process');
-var cors = require('cors')
+var cors = require('cors');
 const sockio = require('socket.io')(3001, {
   cors: {
     origin: ['http://localhost:3000']
@@ -14,7 +15,6 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 const port = process.env.PORT || 5000;
-const uri = "mongodb+srv://sank1:5Cq48XtBzefpVLV@clustercolab.blmrm.mongodb.net/colab-database?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 client.connect(async (err) => {
   assert.equal(null, err);
